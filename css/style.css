@@ -1,0 +1,258 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;900&display=swap');
+
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+/* 기본 배경 */
+ul,ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #757575;
+}
+
+/* 상단 바 */
+section {
+    width: 340px;
+    padding:30px;
+    background-color: rgb(85, 13, 13);
+    margin: 50px auto;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.15);
+    border-radius: 15px ;
+}
+
+section nav.menu {
+    width:100%;
+}
+
+section nav.menu::after {
+    content:"";
+    display: flex;
+    clear: both;
+}
+
+section nav.menu a:nth-of-type(1){
+    color: white;
+    float:left;
+}
+
+section nav.menu a:nth-of-type(2){
+    color:white;
+    float:right;
+}
+
+/*첫번째 사진*/
+section article.worldtour {
+    width: 100%;
+    text-align:center;
+}
+
+section article.worldtour img{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom:20px;
+    box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+/*첫번째 사진의 제목과 설명*/
+section article.worldtour h1 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Noto Sans KR;
+    line-height: 1;
+    color: white;
+    margin-bottom:5px;
+}
+
+section article.worldtour h2 {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Noto Sans KR;
+    color: white;
+    margin-bottom:30px;
+    margin-top:20px;
+}
+
+section article.worldtour h2 span{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Noto Sans KR;
+    color: rgb(255, 208, 0);
+}
+
+section a.btnView {
+    display:block;
+    width: 180px;
+    height: 32px;
+    margin:0px auto 20px;
+    background-color: violet;
+    border-radius:16px;
+    font-weight: 500;
+    font-size:15px;
+    font-family: Noto Sans KR;
+    color:rgb(0, 0, 0);
+    line-height: 32px;
+    text-align:center;
+    background:linear-gradient(360deg,  rgb(255, 130, 98),rgb(252, 95, 134));
+    box-shadow: 5px 10px 20px rgba(46, 5, 5, 0.8);
+}
+
+section ul.contact {
+    margin-bottom:25px;
+}
+
+section ul.contact li {
+    width: 100%;
+    padding : 10px 0px;
+    border-bottom:1px solid #eee;
+}
+
+section ul.contact li:last-child {
+    border-bottom:none;
+}
+
+section ul.contact li i{
+    width:20%;
+    text-align:center;
+    color:#757575;
+    font-size:15px;
+    text-shadow : none;
+}
+
+
+section ul.contact li span{
+    font-weight: 500;
+    text-decoration: none;
+    font-size:15px;
+    font-family: Noto Sans KR;
+    color:white;
+    letter-spacing:auto;
+    
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color:rgb(255, 231, 153);
+    font-weight: 500;
+    text-decoration: none;
+    font-size:15px;
+    font-family: Noto Sans KR
+}
+
+section nav.others {
+    width:100%;
+    text-align:center;
+}
+
+section nav.others a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    margin:0px 10px;
+    opacity: 0.2;
+    filter:saturate(0.2)
+}
+
+section nav.others a.on {
+    opacity: 1;
+    filter:saturate(1)
+}
+
+
+/* 아래 4개 버튼 */
+
+section nav.others a:nth-of-type(1) {
+    background-image: url(/chogle0603.github.io/img/Malaysia.png);
+    background-size: cover;
+    border: 1px solid white;
+}
+section nav.others a:nth-of-type(2) {
+    background-image: url(/chogle0603.github.io/img/USA.png);
+    background-size: cover;
+    border: 1px solid white;
+}
+section nav.others a:nth-of-type(3) {
+    background-image: url(/chogle0603.github.io/img/USA.png);
+    background-size: cover;
+    border: 1px solid white;
+}
+section nav.others a:nth-of-type(4) {
+    background-image: url(/chogle0603.github.io/img/England.png);
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid white;
+}
+
+/*member1*/
+body.member1 {
+    background:linear-gradient(360deg,rgb(40, 119, 119),rgb(252, 95, 134))
+}
+
+body.member1 section article.worldtour img{
+    box-shadow: 5px 15px 20px #1d111183;
+}
+
+body.member1 section a.btnView{
+    background:linear-gradient(360deg,  rgb(255, 130, 98),rgb(252, 95, 134));
+    box-shadow: 5px 10px 20px rgba(46, 5, 5, 0.8);
+}
+
+/*member2*/
+body.member1 {
+    background-color: #ebfaff;
+}
+
+body.member1 section article.worldtour img{
+    box-shadow: 5px 15px 20px #1d111183;
+}
+
+body.member1 section a.btnView{
+    background:linear-gradient(360deg,  rgb(255, 130, 98),rgb(252, 95, 134));
+    box-shadow: 5px 10px 20px rgba(46, 5, 5, 0.8);
+}
+
+/*member3*/
+body.member1 {
+    background-color: #ebfaff;
+}
+
+body.member1 section article.worldtour img{
+    box-shadow: 5px 15px 20px #1d111183;
+}
+
+body.member1 section a.btnView{
+    background:linear-gradient(360deg,  rgb(255, 130, 98),rgb(252, 95, 134));
+    box-shadow: 5px 10px 20px rgba(46, 5, 5, 0.8);
+}
+
+/*member4*/
+body.member1 {
+    background-color: #ebfaff;
+}
+
+body.member1 section article.worldtour img{
+    box-shadow: 5px 15px 20px #1d111183;
+}
+
+body.member1 section a.btnView{
+    background:linear-gradient(360deg,  rgb(255, 130, 98),rgb(252, 95, 134));
+    box-shadow: 5px 10px 20px rgba(46, 5, 5, 0.8);
+}
+
+
+
+
